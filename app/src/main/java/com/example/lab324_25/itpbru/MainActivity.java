@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }   //Main Method
 
     public void clickSignUpMain(View view) {
-        startActivitiy(new Intent(MainActivity.this, SignUpActivity.class));
+        startActivity(new Intent(MainActivity.this, SignUpActivity.class));
     }
 
 }   // Main Class นี่คือคลาสหลัก
