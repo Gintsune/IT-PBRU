@@ -10,6 +10,7 @@ public class SignUpActivity extends AppCompatActivity {
     //Explicit ประกาศตัวแปร
     private EditText nameEditText, surnameEditText, userEditText, passwordEditText;
     private String nameString, surnameString, userString, passwordString;
+    private  static  final String ur1Upload = "http://switfcodingthai.com/pbru2/add_user_master.php"
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +38,14 @@ public class SignUpActivity extends AppCompatActivity {
             myAlert.myDialog(this, "มีช่องว่าง", "กรุณากรอกให้ครบทุกช่อง");
         } else {
             //False
-
+            uploadValueToServer();
         }
 
 
     }   // clickSign
+
+    private void uploadValueToServer() {
+    }   // upload
 
     private boolean checkSpace() {
 
