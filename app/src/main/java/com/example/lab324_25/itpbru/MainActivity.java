@@ -7,11 +7,19 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Explicit
+    private MyManage myManage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }   //Main Method
+
+        myManage = new MyManage(this);
+
+        // Test Add New User
+        //myManage.addNewUser("123","name", "sur", "user", "pass");
+
+    }//Main Method
 
     public void clickSignUpMain(View view) {
         startActivity(new Intent(MainActivity.this, SignUpActivity.class));
